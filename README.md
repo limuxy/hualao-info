@@ -1,15 +1,15 @@
-»°ğìÖ¾ hualao-info
+è¯ç—¨å¿— hualao-info
 ==========
-ÕâÊÇÒ»¸ö¼òµ¥µÄÍøÒ³°æÈÕ¼Ç³ÌĞò£¬ĞèÒª·¹·ñÕÊºÅµÇÂ¼¡£
-ºó¶ËÊÇpython+flask¿ò¼Ü
-Ç°¶ËÊÇ»ùÓÚmaterial designµÄbootstrap (¸ĞĞ»[FezVrasta](http://fezvrasta.github.io/bootstrap-material-design/))
+è¿™æ˜¯ä¸€ä¸ªç®€å•çš„ç½‘é¡µç‰ˆæ—¥è®°ç¨‹åºï¼Œéœ€è¦é¥­å¦å¸å·ç™»å½•ã€‚
+åç«¯æ˜¯python+flaskæ¡†æ¶
+å‰ç«¯æ˜¯åŸºäºmaterial designçš„bootstrap (æ„Ÿè°¢[FezVrasta](http://fezvrasta.github.io/bootstrap-material-design/))
 
-ÈçºÎÔËĞĞ£º
-1. ÔËĞĞvirtualenv env
-2. ¼¤»îºóÔËĞĞpip install -r requirements.txt
-3. ÔËĞĞhualao.py
+å¦‚ä½•è¿è¡Œï¼š
+1. è¿è¡Œvirtualenv env
+2. æ¿€æ´»åè¿è¡Œpip install -r requirements.txt
+3. è¿è¡Œhualao.py
 
-¾ÍÊÇÕâÑù£¡ß÷£¡
+å°±æ˜¯è¿™æ ·ï¼å–µï¼
 
 ----------
 This is a simple diary web-program, you need a Fanfou account to log in.
