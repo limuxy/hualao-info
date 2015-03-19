@@ -1,6 +1,6 @@
 话痨志 hualao-info
-==========
-这是一个简单的网页版日记程序，需要饭否帐号登录。
+=================
+这是一个简单的网页版日记程序，需要[饭否](http://fanfou.com/)帐号登录。
 后端是python+flask框架
 前端是基于material design的bootstrap (感谢[FezVrasta](http://fezvrasta.github.io/bootstrap-material-design/))
 
@@ -12,7 +12,7 @@
 就是这样！喵！
 
 ----------
-This is a simple diary web-program, you need a Fanfou account to log in.
+This is a simple diary web-app, you need a [Fanfou](http://fanfou.com/) account to log in.
 The backend is based on python + flask.
 The frontend is based on Material Design for bootstrap. (Thanks to [FezVrasta](http://fezvrasta.github.io/bootstrap-material-design/))
 
