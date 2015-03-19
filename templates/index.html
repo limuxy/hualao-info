@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <h3 class="panel-title">早哇！{{ session.username }} <a href="{{ url_for('logout') }}">（退出）</a></h3>
+    </div>
+    <div class="panel-body">
+        <a href="{{ url_for('act_morning') }}" class="btn btn-info btn-fab btn-raised mdi-image-brightness-5 icon"></a>
+        <a href="{{ url_for('act_food') }}" class="btn btn-info btn-fab btn-raised mdi-maps-local-restaurant"></a>
+        <a href="{{ url_for('act_sleep') }}" class="btn btn-info btn-fab btn-raised mdi-image-brightness-3"></a>
+        <a href="javascript:void(0)" class="btn btn-info btn-fab btn-raised mdi-image-photo-camera"></a>
+        <a href="http://m.fanfou.com" class="btn btn-info btn-fab btn-raised mdi-device-storage"></a>
+        <a href="{{ url_for('calender') }}" class="btn btn-info btn-fab btn-raised mdi-notification-event-note"></a>
+        <a href="{{ url_for('act_import') }}" class="btn btn-info btn-fab btn-raised mdi-file-cloud-download"></a>
+        <form class="form-inline" action="{{ url_for('act_say') }}" method="post">
+            <div class="form-group">
+                <label for="status">或者说点什么：</label>
+                <input type="text" class="form-control" name="status" id="status" rows="3" required>
+            </div>
+            <button class="btn btn-info btn-raised" type="submit">记一下！</button>
+        </form>
+    </div>
+    <div class="panel-heading">
+        <h3 class="panel-title">今天的日记</h3>
+    </div>
+    <div class="panel-body">
+        <table class="table">
+        {% if statuses == []  %}
+        今天还没有日记
+        {% endif %}
+        {% for status in statuses %}
+            <tr>
+                <td>{{ status[1] }}</td>
+                <td>{{ status[2] }} {% if status[3] is not none %}<img src="{{ status[3] }}" alt="">{% endif %}<small><a href="{{ url_for('delete', id=status[0]) }}">删除</a></small></td>
+            </tr>
+        {% endfor %}
+        </table> 
+    </div>
+</div>
+    
+{% endblock %}

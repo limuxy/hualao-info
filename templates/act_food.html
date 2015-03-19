@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <h3 class="panel-title">吃东西！<a href="{{ url_for('index') }}">回到首页</a></h3>
+    </div>
+    <div class="panel-body">
+        <form class="form-horizontal" action="{{ url_for('act_food') }}" method=post>
+            <div class="row">
+            <div class="form-group">
+                <label for="time" class="col-lg-2 col-lg-offset-3">时间：</label>
+                <div class="col-lg-4">
+                    <select name="time" id="time" class="form-control">
+                        <option value=""></option>
+                        <option value="早饭">早饭</option>
+                        <option value="午饭">午饭</option>
+                        <option value="下午茶">下午茶</option>
+                        <option value="晚饭">晚饭</option>
+                        <option value="宵夜">宵夜</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="food" class="col-lg-2 col-lg-offset-3">食物：</label>
+                <div class="col-lg-4">
+                    <input type="text" class="form-control" name="food" id="food">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="memo" class="col-lg-2 col-lg-offset-3">说点什么：</label>
+                <div class="col-lg-4">
+                    <input type="text" class="form-control" name="memo" id="memo">
+                </div>
+            </div>
+            <button class="btn btn-info btn-raised" type="submit">记一下！</button>
+            </div>
+        </form>
+    </div>
+</div>
+    
+{% endblock %}
