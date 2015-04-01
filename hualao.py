@@ -7,9 +7,8 @@ from dateutil.relativedelta import *
 import time, sqlite3
 app = Flask(__name__)
 app.debug = True
-app.secret_key = '1Or1Q3PdSScRhwx3'
+app.secret_key = ''
 app.database = "hualao.db"
-app.config['UPLOAD_FOLDER'] = "/uploads"
 
 
 def connect_db():
